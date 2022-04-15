@@ -5,7 +5,7 @@ sequentially from 0 to n - 1 and each box may contain keys to the other boxes.
 
 
 def canUnlockAll(boxes):
-    """  determines if all the boxes can be opened.
+    """ Write a method that determines if all the boxes can be opened.
     @boxes is a list of lists
     """
     keys = [0]
@@ -14,4 +14,3 @@ def canUnlockAll(boxes):
             if key not in keys and key < len(boxes):
                 keys.append(key)
     return len(keys) == len(boxes)
-    
